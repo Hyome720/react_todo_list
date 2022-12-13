@@ -1,6 +1,6 @@
 import React, { useState }  from "react"
 import "./App.css"
-import Lists from "./components/Lists";
+import Lists from "./components/List";
 import Form from "./components/Form"
 
 export default function App() {
@@ -16,7 +16,7 @@ export default function App() {
       title: value,
       complete: false,
     }
- 
+
     setTodoData(prev => [...prev, newTodo])
     setValue("")
   }
